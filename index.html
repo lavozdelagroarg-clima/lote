@@ -18,13 +18,11 @@
         
         * { box-sizing: border-box; }
         body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: var(--dark-text); line-height: 1.6; background-color: var(--light-bg); }
-        h1, h2, h3, h4 { font-weight: 800; line-height: 1.2; margin-top: 0; }
-        h2 { font-size: 2.2rem; text-align: center; color: var(--agro-green); margin-bottom: 1.5rem; }
+        h2 { font-size: 2.2rem; text-align: center; color: var(--agro-green); margin-bottom: 1.5rem; font-weight: 800; }
         .container { width: 90%; max-width: 1200px; margin: 0 auto; }
         .text-center { text-align: center; }
 
         .btn { display: inline-block; padding: 15px 30px; background-color: var(--lime-green); color: var(--white); text-decoration: none; font-weight: bold; font-size: 1.1rem; border-radius: 50px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; border: none; cursor: pointer; width: 100%; }
-        .btn:hover { background-color: var(--agro-green); transform: translateY(-2px); }
         .btn-whatsapp { background-color: #25D366; } 
 
         header { background: var(--white); padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
@@ -33,51 +31,20 @@
         .logo img { height: 70px; margin-right: 15px; }
 
         #hero { padding: 60px 0; background: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.9)), url('https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80'); background-size: cover; }
-        .hero-content { display: flex; align-items: center; justify-content: space-between; gap: 50px; }
-        .hero-text { flex: 1.2; }
+        .hero-content { display: flex; align-items: center; justify-content: space-between; gap: 50px; flex-wrap: wrap; }
+        .hero-text { flex: 1.2; min-width: 300px; }
         .hook-speech { background: var(--white); padding: 35px; border-radius: 20px; border-left: 8px solid var(--lime-green); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .highlight-box { background: #e8f5e9; padding: 15px; border-radius: 10px; font-weight: bold; margin: 20px 0; border: 1px solid var(--lime-green); color: var(--agro-green); }
-
+        
         .semaforo-container { background: var(--white); padding: 30px; border-radius: 20px; margin-top: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #eee; }
         .semaforo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; text-align: center; }
         .data-item { padding: 12px; background: #f9f9f9; border-radius: 12px; border-bottom: 4px solid #ddd; }
-        .data-item i { font-size: 1.5rem; color: var(--agro-green); margin-bottom: 8px; }
-        .data-item label { display: block; font-size: 0.7rem; font-weight: bold; color: #888; text-transform: uppercase; }
-        .data-item span { font-size: 1rem; font-weight: 800; color: var(--agro-green); }
-
-        .alertas-bar { background-color: var(--dark-green-bar); color: white; padding: 15px; border-radius: 15px; margin-top: 20px; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 15px; align-items: center; font-size: 0.9rem; }
-        .alerta-item { display: flex; align-items: center; gap: 10px; }
-        .dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; }
-        .dot-green { background-color: #4CAF50; box-shadow: 0 0 8px #4CAF50; }
-        .dot-yellow { background-color: #FFB300; box-shadow: 0 0 8px #FFB300; }
-        .dot-red { background-color: #F44336; box-shadow: 0 0 8px #F44336; }
-
-        .phone-mockup { background: #fff; border-radius: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.2); padding: 10px; border: 5px solid #222; max-width: 280px; margin: 0 auto; }
-        .whatsapp-screen { background: #E5DDD5; padding: 10px; border-radius: 20px; min-height: 400px; display: flex; flex-direction: column; justify-content: flex-end; }
-        .msg { padding: 10px; border-radius: 10px; margin-bottom: 10px; font-size: 0.9rem; }
-        .msg.sent { background: #DCF8C6; align-self: flex-end; border-top-right-radius: 0; }
-        .msg.received { background: #fff; align-self: flex-start; border-top-left-radius: 0; }
-
-        #como-funciona { padding: 60px 0; background: #fff; }
-        .grid-complemento { display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
-        .card-paso { flex: 1; min-width: 300px; background: var(--light-bg); padding: 25px; border-radius: 15px; border-top: 4px solid var(--agro-green); }
-        .vs-icon { display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--gold); font-weight: 900; }
-
-        #comparativa { padding: 60px 0; }
-        .tabla-vs { width: 100%; border-collapse: collapse; text-align: center; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .tabla-vs th { padding: 20px; background: #444; color: #fff; }
-        .tabla-vs td { padding: 15px; border-bottom: 1px solid #eee; }
-        .col-voz { background: var(--lime-green); color: #fff; font-weight: bold; }
+        .data-item span { font-size: 1rem; font-weight: 800; color: var(--agro-green); display: block; }
 
         #planes { padding: 80px 0; background: var(--light-bg); }
         .planes-wrapper { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; }
-        .plan-card { background: var(--white); padding: 35px 25px; border-radius: 20px; flex: 1; min-width: 300px; max-width: 360px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); display: flex; flex-direction: column; position: relative; }
-        .plan-card.institucional { border: 3px solid var(--gold); transform: scale(1.05); z-index: 10; background: #fffdf5; }
-        .etiqueta { background: var(--gold); color: #000; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.8rem; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); text-transform: uppercase; }
-        .precio { font-size: 2.5rem; font-weight: 900; color: var(--agro-green); text-align: center; margin-bottom: 20px; }
-        .features { list-style: none; padding: 0; margin-bottom: 20px; flex-grow: 1; }
-        .features li { margin-bottom: 10px; display: flex; gap: 10px; font-size: 0.95rem; }
-
+        .plan-card { background: var(--white); padding: 35px 25px; border-radius: 20px; flex: 1; min-width: 300px; max-width: 360px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); position: relative; }
+        .plan-card.institucional { border: 3px solid var(--gold); transform: scale(1.05); background: #fffdf5; }
+        
         footer { background: #222; color: #aaa; padding: 40px 0; text-align: center; }
     </style>
 </head>
@@ -98,58 +65,20 @@
             <div class="hero-text">
                 <div class="hook-speech">
                     <h2>WhatsApp es el canal del productor. La Voz del Agro es su herramienta 📲🌾</h2>
-                    <p>Sabemos que la tecnología solo sirve si es simple. Por eso llevamos la precisión técnica al canal donde ya trabajás todos los días.</p>
-                    
-                    <div class="highlight-box">
-                        🎙️ La Voz del Agro: El reporte estratégico que escuchás mientras hacés tu labor, sin salir de WhatsApp.
-                    </div>
-                    
-                    <p>Recibí un <strong>Audio corto + una Infografía táctica</strong> directamente en tu chat. Información exacta de tu ubicación para validar decisiones en segundos.</p>
-                </div>
-            </div>
-            
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <div class="whatsapp-screen">
-                        <div class="msg sent">📍 Pin Ubicación Lote</div>
-                        <div class="msg received">
-                            <strong>La Voz del Agro 🚦</strong><br>
-                            Recibido. Ya podés usar el servicio.<br><br>
-                            ▶️ •••••••• 0:22s 🎙️<br>
-                        </div>
-                        <div class="msg received" style="padding:0; overflow:hidden;">
-                            <img src="https://i.ibb.co/1JwNYZZQ/venta-aplicacion.jpg" style="width:100%;">
-                        </div>
-                    </div>
+                    <p>Llevamos la precisión técnica al canal donde ya trabajás todos los días.</p>
+                    <p>Recibí un <strong>Audio corto + una Infografía táctica</strong> directamente en tu chat.</p>
                 </div>
             </div>
         </div>
 
         <div class="container">
             <div class="semaforo-container">
-                <h3 class="text-center" style="color: var(--agro-green); margin-bottom: 20px;">Dashboard de Precisión en Lote 📊</h3>
+                <h3 class="text-center" style="color: var(--agro-green);">Dashboard de Precisión en Lote 📊</h3>
                 <div class="semaforo-grid">
-                    <div class="data-item"><i class="fas fa-thermometer-half"></i><label>Temp.</label><span>24.5 °C</span></div>
-                    <div class="data-item"><i class="fas fa-tint"></i><label>Humedad</label><span>62%</span></div>
-                    <div class="data-item"><i class="fas fa-wind"></i><label>Viento</label><span>12 km/h</span></div>
-                    <div class="data-item"><i class="fas fa-bolt"></i><label>Ráfagas</label><span>24 km/h</span></div>
-                    <div class="data-item"><i class="fas fa-flask"></i><label>Delta T</label><span>4.8 (Óptimo)</span></div>
-                    <div class="data-item"><i class="fas fa-sun"></i><label>ETo (Evap.)</label><span>3.5 mm</span></div>
-                </div>
-
-                <div class="alertas-bar">
-                    <div class="alerta-item">
-                        <span class="dot dot-green"></span>
-                        <strong>Ventana de Labor:</strong> 08:00 a 18:30 hs
-                    </div>
-                    <div class="alerta-item">
-                        <span class="dot dot-yellow"></span>
-                        <strong>Alerta de Inversión:</strong> 19:45 hs
-                    </div>
-                    <div class="alerta-item">
-                        <span class="dot dot-red"></span>
-                        <strong>Alerta Ráfagas:</strong> 21:00 hs
-                    </div>
+                    <div class="data-item"><label>Temp.</label><span>24.5 °C</span></div>
+                    <div class="data-item"><label>Humedad</label><span>62%</span></div>
+                    <div class="data-item"><label>Viento</label><span>12 km/h</span></div>
+                    <div class="data-item"><label>Delta T</label><span>4.8 (Óptimo)</span></div>
                 </div>
             </div>
         </div>
@@ -157,150 +86,27 @@
 
     <section id="infografia-flujo" style="padding: 60px 0; background: #fff;">
         <div class="container text-center">
-            <h2 style="margin-bottom: 30px; color: var(--agro-green);">Flujo de Información 🚦</h2>
-            <img src="flujo.jpg" alt="Flujo de Información La Voz del Agro" style="width: 100%; max-width: 1000px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.1);">
-        </div>
-    </section>
-
-    <section id="como-funciona">
-        <div class="container">
-            <h2>El Doble Chequeo por WhatsApp 🤝</h2>
-            <div class="grid-complemento">
-                <div class="card-paso">
-                    <h3>📅 Pin Proyección (3 días)</h3>
-                    <p>Mandás el pin para organizar la logística semanal. Sabés exactamente qué viene en tu lote para los próximos 3 días.</p>
-                </div>
-                <div class="vs-icon"> + </div>
-                <div class="card-paso">
-                    <h3>📍 Pin Tiempo Real (Hoy)</h3>
-                    <p>Mandás el pin el día de la labor. Recibís el reporte exacto cada 3 horas para validar la aplicación en el acto. 🛑🟢</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="comparativa">
-        <div class="container">
-            <h2>Por qué somos la mejor decisión 🚜</h2>
-            <div class="tabla-vs">
-                <table style="width: 100%; border-collapse: collapse;">
-                    <thead>
-                        <tr>
-                            <th style="padding: 20px; background: #444; color: #fff;">¿Qué buscás?</th>
-                            <th style="padding: 20px; background: #444; color: #fff;">Apps Comunes</th>
-                            <th class="col-voz" style="padding: 20px;">La Voz del Agro 🚦</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="padding: 15px; border-bottom: 1px solid #eee;"><b>Ubicación</b></td>
-                            <td style="padding: 15px; border-bottom: 1px solid #eee;">General (Pueblo)</td>
-                            <td class="col-voz" style="padding: 15px;">✅ Exacta por Pin</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 15px; border-bottom: 1px solid #eee;"><b>Fricción</b></td>
-                            <td style="padding: 15px; border-bottom: 1px solid #eee;">Bajar App / Loguearse</td>
-                            <td class="col-voz" style="padding: 15px;">✅ NINGUNA (WhatsApp)</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 15px; border-bottom: 1px solid #eee;"><b>Formato</b></td>
-                            <td style="padding: 15px; border-bottom: 1px solid #eee;">Mapas y tablas</td>
-                            <td class="col-voz" style="padding: 15px;">✅ Audio + Infografía</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <h2 style="color: var(--agro-green);">Flujo de Información 🚦</h2>
+            <img src="https://lavozdelagroarg-clima.github.io/flujo.jpg" alt="Flujo de Información" style="width: 100%; max-width: 1000px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.1);">
         </div>
     </section>
 
     <section id="planes">
         <div class="container">
-            <h2>Elegí cómo recibir tu reporte 💼</h2>
+            <h2>Elegí tu plan 💼</h2>
             <div class="planes-wrapper">
-                
                 <div class="plan-card institucional">
-                    <div class="etiqueta">Alianza Institucional 🤝</div>
                     <h3 class="text-center">Plan Institucional</h3>
-                    <div class="precio">GRATIS<span> $0</span></div>
-                    
-                    <ul class="features">
-                        <li>✅ 16 Pines en tiempo real / mes.</li>
-                        <li>✅ 8 Proyecciones a 3 días / mes.</li>
-                        <li>✅ Reporte por Audio + Infografía.</li>
-                        <li>✅ <b>Bonificado</b> por tu institución.</li>
-                    </ul>
-
-                    <div style="background: #fff; border: 1px dashed var(--agro-green); padding: 12px; border-radius: 12px; margin-bottom: 20px; font-size: 0.85rem; color: var(--agro-green); line-height: 1.4;">
-                        <i class="fas fa-tractor"></i> <strong>Rendimiento para Contratistas:</strong> 
-                        Maximizá tu logística usando los pines de ubicación en <strong>diferentes lotes</strong> de forma dinámica.
-                    </div>
-
-                    <a href="https://wa.me/5492346577908?text=Quiero%20activar%20mi%20beneficio" class="btn" style="background:var(--agro-green); border:2px solid var(--gold); font-weight: 900;">ACTIVA TU BENEFICIO 💡</a>
+                    <p class="text-center" style="font-size: 2rem; font-weight: 900;">GRATIS</p>
+                    <a href="https://wa.me/5492346577908?text=Activar%20beneficio" class="btn btn-whatsapp">ACTIVA TU BENEFICIO 💡</a>
                 </div>
-
-                <div class="plan-card">
-                    <h3 class="text-center">Plan Súper</h3>
-                    <div class="precio">$15.000<span>/mes</span></div>
-                    <ul class="features">
-                        <li>✅ 16 Pines en tiempo real / mes.</li>
-                        <li>✅ 8 Proyecciones a 3 días / mes.</li>
-                        <li>✅ Reporte Audio + Semáforo.</li>
-                        <li>✅ 15 días de prueba GRATIS.</li>
-                    </ul>
-                    <a href="https://wa.me/5492346577908?text=Quiero%20más%20información%20sobre%20el%20Plan%20Súper" class="btn btn-whatsapp">Contratar Plan Súper</a>
-                </div>
-
-                <div class="plan-card">
-                    <h3 class="text-center">Plan Premium</h3>
-                    <div class="precio">$25.000<span>/mes</span></div>
-                    <ul class="features">
-                        <li>✅ <b>Pines Ilimitados</b>.</li>
-                        <li>✅ Seguimiento de múltiples lotes.</li>
-                        <li>✅ Reportes para contratistas.</li>
-                        <li>✅ Soporte prioritario 24/7.</li>
-                    </ul>
-                    <a href="https://wa.me/5492346577908?text=Quiero%20más%20información%20sobre%20el%20Plan%20Premium" class="btn btn-whatsapp">Contratar Premium ⭐</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="cierre-final" style="padding: 60px 0; background-color: var(--white);">
-        <div class="container text-center">
-            <div style="max-width: 800px; margin: 0 auto; background: var(--light-bg); padding: 40px; border-radius: 30px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <div style="font-size: 3rem; margin-bottom: 20px;">📲</div>
-                <h2 style="margin-bottom: 20px; color: var(--agro-green);">Simple, rápido y directo en tu bolsillo</h2>
-                <p style="font-size: 1.2rem; color: var(--dark-text); margin-bottom: 30px;">
-                    <strong>La Voz del Agro</strong> funciona donde ya estás: en tu WhatsApp.
-                </p>
-
-                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 35px;">
-                    <div style="flex: 1; min-width: 150px;">
-                        <span style="font-size: 1.5rem;">📍</span>
-                        <p><strong>Mandás el Pin</strong></p>
-                    </div>
-                    <div style="flex: 1; min-width: 150px;">
-                        <span style="font-size: 1.5rem;">🎙️</span>
-                        <p><strong>Escuchás el Audio</strong></p>
-                    </div>
-                    <div style="flex: 1; min-width: 150px;">
-                        <span style="font-size: 1.5rem;">🚜</span>
-                        <p><strong>Decidís en el lote</strong></p>
-                    </div>
-                </div>
-
-                <p style="font-weight: bold; color: var(--agro-green); font-size: 1.1rem; margin-bottom: 30px;">
-                    La precisión no tiene por qué ser complicada. Es información que rinde, directo a tu oído.
-                </p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>🚦 <strong>LA VOZ DEL AGRO</strong> - Información que rinde. ✨</p>
-            <p>WhatsApp: +54 9 2346 577908</p>
-            <p>© 2026 Todos los derechos reservados.</p>
+            <p>© 2026 LA VOZ DEL AGRO - Información que rinde. ✨</p>
         </div>
     </footer>
 
