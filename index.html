@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Voz del Agro - La decisión en tu oído 🎙️🌤️</title>
+    <title>La Voz del Agro - Decisiones que rinden 🎙️🌤️</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -24,6 +24,7 @@
         .text-center { text-align: center; }
 
         .btn { display: inline-block; padding: 15px 30px; background-color: var(--lime-green); color: var(--white); text-decoration: none; font-weight: bold; font-size: 1.1rem; border-radius: 50px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; border: none; cursor: pointer; width: 100%; }
+        
         header { background: var(--white); padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
         header .container { display: flex; justify-content: space-between; align-items: center; }
         .logo { font-size: 1.8rem; font-weight: 900; color: var(--agro-green); display: flex; align-items: center; text-transform: uppercase; }
@@ -34,29 +35,6 @@
         .hero-text { flex: 1.2; min-width: 300px; }
         .hook-speech { background: var(--white); padding: 35px; border-radius: 20px; border-left: 8px solid var(--lime-green); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
         
-        /* FLUJO DE PASOS CON CÓDIGO */
-        .flujo-digital { background: var(--white); padding: 40px; border-radius: 20px; margin: 40px 0; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-        .flujo-grid { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-        .flujo-step { flex: 1; min-width: 250px; text-align: center; padding: 20px; background: #f9f9f9; border-radius: 15px; border: 1px solid #eee; }
-        .step-icon { font-size: 2.5rem; color: var(--agro-green); margin-bottom: 15px; }
-        .step-arrow { font-size: 2rem; color: var(--gold); }
-
-        /* Mockups de WhatsApp con Letras más Grandes */
-        .phone-mini { background: #222; border-radius: 18px; padding: 8px; width: 180px; margin: 10px auto; border: 4px solid #444; }
-        .screen-mini { background: #E5DDD5; border-radius: 12px; height: 180px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; padding: 10px; }
-        .bubble-mini { font-size: 0.85rem; padding: 8px; border-radius: 8px; margin-bottom: 8px; max-width: 95%; text-align: left; font-weight: 500; }
-        .bubble-in { background: white; align-self: flex-start; }
-        .bubble-out { background: #DCF8C6; align-self: flex-end; }
-        
-        /* Infografía simulada más grande */
-        .infografia-box { background: var(--agro-green); color: white; border-radius: 6px; padding: 10px; font-size: 0.75rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
-        .info-header { border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px; margin-bottom: 8px; font-weight: bold; font-size: 0.8rem; }
-        .info-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
-
-        .grid-complemento { display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
-        .card-paso { flex: 1; min-width: 300px; background: var(--white); padding: 25px; border-radius: 15px; border-top: 4px solid var(--agro-green); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .vs-icon { display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--gold); font-weight: 900; }
-
         /* DASHBOARD DE CLIMA */
         .semaforo-container { background: var(--white); padding: 30px; border-radius: 20px; margin-top: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #eee; }
         .semaforo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; text-align: center; }
@@ -72,6 +50,29 @@
         .dot-yellow { background-color: #FFB300; box-shadow: 0 0 8px #FFB300; }
         .dot-red { background-color: #F44336; box-shadow: 0 0 8px #F44336; }
 
+        /* SECCIÓN DOBLE CHEQUEO */
+        .grid-complemento { display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
+        .card-paso { flex: 1; min-width: 300px; background: var(--white); padding: 25px; border-radius: 15px; border-top: 4px solid var(--agro-green); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .vs-icon { display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--gold); font-weight: 900; }
+
+        /* FLUJO PASOS Y MOCKUPS */
+        .flujo-digital { background: var(--white); padding: 40px; border-radius: 20px; margin: 40px 0; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        .flujo-grid { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+        .flujo-step { flex: 1; min-width: 250px; text-align: center; padding: 20px; background: #f9f9f9; border-radius: 15px; border: 1px solid #eee; }
+        .step-icon { font-size: 2.5rem; color: var(--agro-green); margin-bottom: 15px; }
+        .step-arrow { font-size: 2rem; color: var(--gold); }
+
+        .phone-mini { background: #222; border-radius: 18px; padding: 10px; width: 200px; margin: 10px auto; border: 4px solid #444; }
+        .screen-mini { background: #E5DDD5; border-radius: 12px; height: 200px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; padding: 12px; }
+        .bubble-mini { font-size: 0.95rem; padding: 10px; border-radius: 8px; margin-bottom: 10px; max-width: 95%; text-align: left; font-weight: 600; line-height: 1.2; }
+        .bubble-in { background: white; align-self: flex-start; }
+        .bubble-out { background: #DCF8C6; align-self: flex-end; }
+        
+        .infografia-box { background: var(--agro-green); color: white; border-radius: 6px; padding: 12px; font-size: 0.85rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2); width: 100%; }
+        .info-header { border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px; margin-bottom: 10px; font-weight: bold; font-size: 0.9rem; }
+        .info-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+
+        /* PLANES */
         #planes { padding: 80px 0; background: var(--light-bg); }
         .planes-wrapper { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; }
         .plan-card { background: var(--white); padding: 35px 25px; border-radius: 20px; flex: 1; min-width: 300px; max-width: 360px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); display: flex; flex-direction: column; position: relative; }
@@ -81,7 +82,9 @@
         .features { list-style: none; padding: 0; margin-bottom: 20px; flex-grow: 1; }
         .features li { margin-bottom: 10px; display: flex; gap: 10px; font-size: 0.95rem; }
 
-        footer { background: #222; color: #aaa; padding: 40px 0; text-align: center; }
+        /* FOOTER */
+        footer { background: #222; color: #aaa; padding: 60px 0; text-align: center; }
+        footer a { color: var(--lime-green); text-decoration: none; font-weight: bold; }
 
         @media (max-width: 768px) {
             .step-arrow { transform: rotate(90deg); margin: 10px 0; }
@@ -108,7 +111,7 @@
                         <h2>WhatsApp es el canal del productor. La Voz del Agro es su herramienta 📲🌾</h2>
                         <p>Sabemos que la tecnología solo sirve si es simple. Llevamos precisión técnica al canal donde ya trabajás todos los días.</p>
                         <div style="background: #e8f5e9; padding: 15px; border-radius: 10px; font-weight: bold; margin: 20px 0; border: 1px solid var(--lime-green); color: var(--agro-green);">
-                            🎙️ La Voz del Agro: El reporte que escuchás mientras hacés tu labor, sin salir de WhatsApp.
+                            🎙️ La Voz del Agro: El reporte técnico que escuchás mientras hacés tu labor, sin salir de WhatsApp.
                         </div>
                     </div>
                 </div>
@@ -158,7 +161,7 @@
                         <p>Pin de WhatsApp o <strong>Coordenadas</strong>.</p>
                         <div class="phone-mini">
                             <div class="screen-mini">
-                                <div class="bubble-mini bubble-out">📍 Pin Lote...</div>
+                                <div class="bubble-mini bubble-out">📍 Compartir ubicación o enviar coordenadas...</div>
                                 <div class="bubble-mini bubble-out">-27.78, -64.26</div>
                             </div>
                         </div>
@@ -169,7 +172,7 @@
                     <div class="flujo-step">
                         <div class="step-icon"><i class="fas fa-microphone-alt"></i></div>
                         <h3>2. Recibís el Audio</h3>
-                        <p>Interpretación técnica por voz directa a tu oído.</p>
+                        <p>Información estratégica directa para la toma de decisión.</p>
                         <div class="phone-mini">
                             <div class="screen-mini" style="justify-content: center;">
                                 <div class="bubble-mini bubble-in">
@@ -185,14 +188,14 @@
                     <div class="flujo-step">
                         <div class="step-icon"><i class="fas fa-file-invoice"></i></div>
                         <h3>3. Infografía Táctica</h3>
-                        <p>Resumen visual de temperatura y humedad.</p>
+                        <p>Resumen visual de clima y semáforo de aplicación.</p>
                         <div class="phone-mini">
                             <div class="screen-mini" style="justify-content: center;">
                                 <div class="infografia-box">
                                     <div class="info-header">REPORTE AGRO 🚜</div>
                                     <div class="info-row"><span>🌡️ Temp:</span> <span>24°C</span></div>
                                     <div class="info-row"><span>💧 Hum:</span> <span>62%</span></div>
-                                    <div style="margin-top:8px; background: #4CAF50; color: white; padding: 4px; border-radius: 4px; font-weight: bold;">🟢 ÓPTIMO</div>
+                                    <div style="margin-top:8px; background: #4CAF50; color: white; padding: 6px; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">🟢 ÓPTIMO</div>
                                 </div>
                             </div>
                         </div>
@@ -203,23 +206,60 @@
         </div>
     </section>
 
+    <section id="relatos" style="padding: 80px 0; background-color: var(--white);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 style="color: var(--agro-green); margin-bottom: 30px;">Simple, en el bolsillo y a tu tiempo 📲</h2>
+                
+                <p style="font-size: 1.2rem; color: #555; margin-bottom: 40px; line-height: 1.8;">
+                    Sabemos que en el campo no sobra el tiempo para aplicaciones complejas. 
+                    <strong>La Voz del Agro</strong> opera en el canal que ya usás: tu WhatsApp.
+                </p>
+
+                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 45px;">
+                    <div style="flex: 1; min-width: 150px; background: #f9f9f9; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                        <span style="font-size: 2.5rem;">📍</span>
+                        <p style="margin-top: 10px;"><strong>Enviás Pin o Coordenadas</strong></p>
+                    </div>
+                    <div style="flex: 1; min-width: 150px; background: #f9f9f9; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                        <span style="font-size: 2.5rem;">🎙️</span>
+                        <p style="margin-top: 10px;"><strong>Escuchás el Reporte</strong></p>
+                    </div>
+                    <div style="flex: 1; min-width: 150px; background: #f9f9f9; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                        <span style="font-size: 2.5rem;">🚜</span>
+                        <p style="margin-top: 10px;"><strong>Decidís con Certeza</strong></p>
+                    </div>
+                </div>
+
+                <div style="background: var(--light-bg); padding: 40px; border-radius: 20px; border-left: 8px solid var(--gold); text-align: left; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+                    <p style="font-weight: bold; color: var(--agro-green); font-size: 1.3rem; margin-bottom: 15px;">
+                        Llevamos la decisión al momento justo. 🎙️
+                    </p>
+                    <p style="font-size: 1.1rem; color: #444; margin-bottom: 0;">
+                        La precisión se basa en datos reales. Entregamos información meteorológica de alto valor obtenida a través del cruce de los <strong>modelos americanos (GFS), europeos (ECMWF) y el Servicio Meteorológico Nacional</strong>. Sin vueltas, directo a tu labor diaria para que cada aplicación cuente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="planes">
         <div class="container">
-            <h2>Elegí cómo recibir tu reporte 💼</h2>
+            <h2 class="text-center">Elegí cómo recibir tu reporte 💼</h2>
             <div class="planes-wrapper">
                 <div class="plan-card institucional">
                     <div class="etiqueta">Alianza Institucional 🤝</div>
                     <h3 class="text-center">Plan Institucional</h3>
                     <div class="precio">GRATIS<span> $0</span></div>
                     <ul class="features">
-                        <li>✅ 16 Pines en tiempo real / mes.</li>
+                        <li>✅ 16 Reportes en tiempo real / mes.</li>
                         <li>✅ 8 Proyecciones a 3 días / mes.</li>
                         <li>✅ Reporte por Audio + Infografía.</li>
                         <li>✅ <b>Bonificado</b> por tu institución.</li>
                     </ul>
                     <div style="background: #fff; border: 1px dashed var(--agro-green); padding: 12px; border-radius: 12px; margin-bottom: 20px; font-size: 0.85rem; color: var(--agro-green); line-height: 1.4;">
                         <i class="fas fa-tractor"></i> <strong>Rendimiento para Contratistas:</strong> 
-                        Maximizá tu logística usando los pines en <strong>diferentes lotes</strong>.
+                        Maximizá tu logística usando los reportes en <strong>diferentes lotes</strong>.
                     </div>
                     <a href="https://wa.me/5492346577908?text=Quiero%20activar%20mi%20beneficio" class="btn" style="background:var(--agro-green); color: white; border:2px solid var(--gold); font-weight: 900; text-decoration: none;">ACTIVA TU BENEFICIO 💡</a>
                 </div>
@@ -228,7 +268,7 @@
                     <h3 class="text-center">Plan Súper</h3>
                     <div class="precio">$15.000<span>/mes</span></div>
                     <ul class="features">
-                        <li>✅ 16 Pines en tiempo real / mes.</li>
+                        <li>✅ 16 Reportes en tiempo real / mes.</li>
                         <li>✅ 8 Proyecciones a 3 días / mes.</li>
                         <li>✅ Reporte Audio + Semáforo.</li>
                         <li>✅ 15 días de prueba GRATIS.</li>
@@ -240,7 +280,7 @@
                     <h3 class="text-center">Plan Premium</h3>
                     <div class="precio">$25.000<span>/mes</span></div>
                     <ul class="features">
-                        <li>✅ <b>Pines Ilimitados</b>.</li>
+                        <li>✅ <b>Reportes Ilimitados</b>.</li>
                         <li>✅ Seguimiento de múltiples lotes.</li>
                         <li>✅ Soporte prioritario 24/7.</li>
                     </ul>
@@ -252,8 +292,19 @@
 
     <footer>
         <div class="container">
-            <p>🚦 <strong>LA VOZ DEL AGRO</strong> - Información que rinde. ✨</p>
-            <p>© 2026 Todos los derechos reservados.</p>
+            <div style="margin-bottom: 30px;">
+                <img src="https://i.ibb.co/jP0s8TrQ/logo-la-voz-del-agro.png" alt="La Voz del Agro" style="height: 80px; filter: grayscale(1) brightness(2);">
+            </div>
+            <p style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">
+                🚦 <strong>LA VOZ DEL AGRO</strong> - Información que rinde. ✨
+            </p>
+            <p style="margin-bottom: 10px; font-size: 1.1rem; color: #eee;">
+                📧 <a href="mailto:lavozdelagro.arg@gmail.com">lavozdelagro.arg@gmail.com</a>
+            </p>
+            <p style="font-size: 0.9rem; opacity: 0.7;">
+                © 2026 Todos los derechos reservados. <br>
+                Santiago del Estero, Argentina.
+            </p>
         </div>
     </footer>
 
